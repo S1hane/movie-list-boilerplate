@@ -1,28 +1,36 @@
 {
-  "name": "react-boilerplate",
+  "name": "movie-list-boilerplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Shows a list of movies",
+  "main": "./client/src/index.js",
   "scripts": {
-    "start": "nodemon server",
-    "build": "webpack -w",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server",
+    "react-dev": "webpack --config webpack.config.js --watch -d source-map"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S1hane/movie-list-boilerplate.git"
+  },
+  "author": "Shane Lemmer",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.6",
-    "express": "^4.17.1",
-    "react": "^16.10.1",
-    "react-dom": "^16.10.1",
-    "webpack": "^4.41.0",
-    "webpack-cli": "^3.3.9"
+  "bugs": {
+    "url": "https://github.com/S1hane/movie-list-boilerplate/issues"
   },
-  "dependencies": {
-    "nodemon": "^1.19.3"
+  "homepage": "https://github.com/S1hane/movie-list-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "express": "^4.17.1",
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0"
   }
 }
